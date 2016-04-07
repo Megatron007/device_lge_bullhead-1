@@ -36,7 +36,7 @@ KRAIT_TUNINGS := false
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 TARGET_GCC_VERSION_EXP := 4.9
-TARGET_GCC_VERSION_ARM64 := 5.3
+TARGET_GCC_VERSION_ARM64 := 5.3-kernel
 
 # Inline kernel building
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-5.3/bin
