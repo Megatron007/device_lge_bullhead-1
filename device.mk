@@ -20,15 +20,6 @@
 # Everything in this directory will become public
 
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lge/bullhead-kernel/Image.gz-dtb
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel
-
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/init.bullhead.rc:root/init.bullhead.rc \
     device/lge/bullhead/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
@@ -418,6 +409,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     power.bullhead
 
+# old-apns.conf
+PRODUCT_COPY_FILES += \
+    device/lge/bullhead/old-apns-conf.xml:system/etc/old-apns-conf.xml
+
 # Modem debugger/misc
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
@@ -437,12 +432,12 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # facelock properties
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.facelock.black_timeout=400 \
-ro.facelock.det_timeout=1500 \
-ro.facelock.rec_timeout=2500 \
-ro.facelock.lively_timeout=2500 \
-ro.facelock.est_max_time=600 \
-ro.facelock.use_intro_anim=false
+    ro.facelock.black_timeout=400 \
+    ro.facelock.det_timeout=1500 \
+    ro.facelock.rec_timeout=2500 \
+    ro.facelock.lively_timeout=2500 \
+    ro.facelock.est_max_time=600 \
+    ro.facelock.use_intro_anim=false
 
 $(call inherit-product-if-exists, hardware/qcom/msm8994/msm8992.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
