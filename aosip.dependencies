@@ -5,7 +5,7 @@
 "branch": "master"
 },
 {
-"repository": "proprietary_vendor_lge",
+"repository": "platform_vendor_lge",
 "target_path": "vendor/lge"
 }
 ]
