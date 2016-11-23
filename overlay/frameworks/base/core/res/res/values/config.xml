@@ -432,4 +432,7 @@
          config to 7.
     <integer name="config_deviceHardwareWakeKeys">64</integer> -->
 
+    <!-- Enable Night display, which requires HWC 2.0. -->
+    <bool name="config_nightDisplayAvailable">true</bool>
+
 </resources>
