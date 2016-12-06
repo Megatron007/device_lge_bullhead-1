@@ -8,7 +8,7 @@
  {
    "repository":  "platform_vendor_lge",
    "target_path": "vendor/lge",
-   "branch":      "n"
+   "branch":      "n7x"
  },
  {
    "remote":      "bb",
