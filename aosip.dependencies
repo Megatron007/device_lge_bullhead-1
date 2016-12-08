@@ -2,12 +2,13 @@
 [
  { 
    "remote":      "github",
-   "repository":  "KronicKernel/bullhead",
+   "repository":  "DirtyUnicorns/android_kernel_lge_bullhead",
    "target_path": "kernel/lge/bullhead",
-   "branch":      "nougat"
+   "branch":      "n7"
  },
  {
    "repository":  "platform_vendor_lge",
-   "target_path": "vendor/lge"
+   "target_path": "vendor/lge",
+   "branch":      "n"
  }
 ]
