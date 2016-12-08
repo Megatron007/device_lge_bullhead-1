@@ -1,13 +1,19 @@
-
 [
  { 
    "remote":      "github",
-   "repository":  "KronicKernel/bullhead",
+   "repository":  "Abuk/bullhead",
    "target_path": "kernel/lge/bullhead",
-   "branch":      "nougat"
+   "branch":      "n"
  },
  {
    "repository":  "platform_vendor_lge",
-   "target_path": "vendor/lge"
+   "target_path": "vendor/lge",
+   "branch":      "n"
+ },
+ {
+   "remote":      "bb",
+   "repository":  "mdalexca/aarch64-linux-android-6.x",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-uber",
+   "branch":      "master"
  }
 ]
