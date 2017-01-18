@@ -1,0 +1,16 @@
+[
+ { 
+   "remote":      "github",
+   "repository":  "Abuk/bullhead",
+   "target_path": "kernel/lge/bullhead",
+   "branch":      "n"
+ },
+ {
+   "repository":  "platform_vendor_lge",
+   "target_path": "vendor/lge"
+ },
+ {
+   "repository":  "aarch64-linux-android-4.9",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-uber"
+ }
+]
