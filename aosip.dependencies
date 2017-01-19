@@ -6,6 +6,12 @@
    "branch":      "n"
  },
  {
+   "remote":      "aosp",
+   "repository":  "device/google/contexthub",
+   "target_path": "device/google/contexthub",
+   "branch":      "refs/tags/android-7.1.1_r1"
+ },
+ {
    "repository":  "platform_vendor_lge",
    "target_path": "vendor/lge"
  },
