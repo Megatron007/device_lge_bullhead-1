@@ -1,16 +1,14 @@
 [
  { 
    "remote":      "github",
-   "repository":  "Abuk/bullhead",
+   "repository":  "LineageOS/android_kernel_lge_bullhead",
    "target_path": "kernel/lge/bullhead",
-   "branch":      "n"
+   "branch":      "cm-14.1"
  },
  {
-   "repository":  "platform_vendor_lge",
+   "remote":      "github",
+   "repository":  "AOSip-Devices/platform_vendor_lge",
    "target_path": "vendor/lge"
+   "branch":      "n-mr1"
  },
- {
-   "repository":  "aarch64-linux-android-4.9",
-   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-uber"
- }
 ]
